@@ -7,3 +7,9 @@ export * from './ui/sidebar/SideBar';
 // ======> PRODUCTS
 export * from './products/product-grid/ProductGrid';
 export * from './products/product-grid/ProductGridItem';
+export * from './product/slideshow/ProductSlideshow';
+export * from './product/slideshow/ProductMobileSlideshow';
+
+// ======> PRODUCT
+export * from './product/size-selector/SizeSelector';
+export * from './product/quantity-selector/QuantitySelector';
