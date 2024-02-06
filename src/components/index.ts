@@ -16,3 +16,6 @@ export * from './product/stock-label/StockLabel';
 // ======> PRODUCT
 export * from './product/size-selector/SizeSelector';
 export * from './product/quantity-selector/QuantitySelector';
+
+// ======> PROVIDERS
+export * from './provider/Provider';
