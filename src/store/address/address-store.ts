@@ -21,9 +21,7 @@ export const useAddressStore = create<State>()(
                 phone: '',
             },
 
-            setAddress: address => {
-                set({ address });
-            },
+            setAddress: address => set({ address }),
         }),
         {
             name: 'address-storage',
