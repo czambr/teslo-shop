@@ -46,7 +46,6 @@ export const authConfig: NextAuthConfig = {
 
                 // ===> Regresar el usuario con la info que necesita su sesion
                 const { password: _, ...rest } = user;
-                console.log('user SEND\n', { rest });
                 return rest;
             },
         }),
