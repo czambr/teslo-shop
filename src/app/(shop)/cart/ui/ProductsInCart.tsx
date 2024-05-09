@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { QuantitySelector } from "@/components";
+import { ProductImage, QuantitySelector } from "@/components";
 import { useCartStore } from "@/store";
 import { currencyFormat } from "@/utils";
 
@@ -28,7 +28,7 @@ export const ProductsInCart = () => {
             {
                 productInCart.map(product => (
                     <div key={`${product.id}-${product.size}`} className="flex mb-5">
-                        <Image
+                        <ProductImage
                             className="mr-5 rounded"
                             width={100}
                             height={100}
@@ -37,7 +37,7 @@ export const ProductsInCart = () => {
                                 height: '100px',
                             }}
                             alt={product.title}
-                            src={`/products/${product.image}`}
+                            src={product.image}
                         />
                         <div>
                             <Link
